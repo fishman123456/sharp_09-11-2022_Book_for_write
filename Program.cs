@@ -37,8 +37,9 @@ internal class Program
             Console.WriteLine("4 выыод на консоль");
             Console.WriteLine("5 очистка экрана");
             Console.WriteLine("0 выход");
-
+            Console.WriteLine(DateTime.Now);
             menu = Convert.ToInt32(Console.ReadLine());
+            
             switch (menu)
             {
                 case 0:
@@ -49,9 +50,10 @@ internal class Program
                     //Добавим новый элемент списка
                     Console.WriteLine();
                     Console.WriteLine("Добавляем элемент в список по индексу \t");
-                    Console.WriteLine("От 0..{0}", books.Count);
+                    Console.WriteLine("От 0..{0}", books.Count-1);
                     int num_el = Convert.ToInt32(Console.ReadLine());
-                    books.Insert(num_el, new Book("eleventh", false));
+                  string  book_n =Console.ReadLine();
+                    books.Insert(num_el, new Book(book_n, false));
 
                     break;
                 case 2:
@@ -67,6 +69,7 @@ internal class Program
                 case 3:
                     //проверка книги на прочтение
                     //Посмотрим на все элементы списка
+                   
                     Console.WriteLine("Нужна проверка для второго поля прочитана книга или нет");
                     
                     break;
@@ -93,7 +96,7 @@ internal class Program
     class Book
     {
         public string? _name { get; set; } // сеттеры и геттеры
-        public bool _read { get; set; }
+        public bool? _read { get; set; }
         public Book() { }
         public Book(string name, bool read)
         {
