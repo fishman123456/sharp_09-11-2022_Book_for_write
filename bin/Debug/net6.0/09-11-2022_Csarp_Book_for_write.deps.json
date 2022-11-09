@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "09-11-2022_Csarp_Book_for_write/1.0.0": {
+        "runtime": {
+          "09-11-2022_Csarp_Book_for_write.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "09-11-2022_Csarp_Book_for_write/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
