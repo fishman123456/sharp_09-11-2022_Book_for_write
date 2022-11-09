@@ -58,10 +58,10 @@ internal class Program
                     //Удалим элемент из списка
                     Console.WriteLine();
                     Console.WriteLine("Удаляем элемент из списка");
-                    Console.WriteLine("От 0..{0}", books.Count);
+                    Console.WriteLine("От 0..{0}", books.Count-1);
                     num_el = Convert.ToInt32(Console.ReadLine());
-                    books.Insert(num_el, new Book("eleventh", false));
-                    books.RemoveAt(5);
+                    
+                    books.RemoveAt(num_el);
 
                     break;
                 case 3:
